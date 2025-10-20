@@ -12,10 +12,7 @@ namespace CW1_template
         private string name;
         private double price;
         private int quantity;
-        private string v1;
-        private string v2;
-        private string v3;
-        private string v4;
+        
 
         public int ProductID
         {
@@ -43,18 +40,10 @@ namespace CW1_template
 
         public Product(int productID, string name, double price, int quantity)
         {
-            this.productID = productID;
-            this.name = name;
-            this.price = price;
-            this.quantity = quantity;
-        }
-
-        public Product(string v1, string v2, string v3, string v4)
-        {
-            this.v1 = v1;
-            this.v2 = v2;
-            this.v3 = v3;
-            this.v4 = v4;
+            this.ProductID = productID;
+            this.Name = name;
+            this.Price = price;
+            this.Quantity = quantity;
         }
 
         public void PrintProduct()
@@ -65,16 +54,17 @@ namespace CW1_template
             Console.WriteLine($"Product Quantity {quantity}");
         }
 
-        public void CheapestProduct(Product p1, Product p2)
+      public void CheapestProduct(Product p1, Product p2)
         {
-            if (p1 < p2)
+            if (p1.price < p2.price)
             {
-                Console.WriteLine($"£ {p1} ");
+                Console.WriteLine($"£ {p1}");
             }
             else
             {
                 Console.WriteLine($"£ {p2}");
             }
         }
+            
     }
 }

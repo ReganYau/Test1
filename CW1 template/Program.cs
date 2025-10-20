@@ -19,7 +19,7 @@ internal class CW1
        Question3.question3();
         Question4.question4();
        Question5.question5();
-       // Question6.question6();
+      Question6.question6();
 
     }
 }
