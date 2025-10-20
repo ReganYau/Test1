@@ -13,8 +13,17 @@ namespace CW1_template
             // Question 2:
             Console.WriteLine("\n-------Question 2-------");
             // Enter code and comments here...
-           
 
+            for (int i = 0; i < 50; i++)
+            {
+                int result = i % 3;
+                if (result == 0)
+                {
+                    Console.WriteLine($"{result}");
+                }
+
+            }
         }
     }
 }
+

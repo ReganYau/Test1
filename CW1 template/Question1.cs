@@ -13,8 +13,10 @@ namespace CW1_template
             // Question 1: 
             Console.WriteLine("-------Question 1-------");
             // Enter code and comments here...
-
-           
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(GetAlphabet());
+            }
         }
 
 

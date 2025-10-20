@@ -12,7 +12,7 @@ namespace CW1_template
         {
             // Question 6:
             Console.WriteLine("\n-------Question 6-------");
-            
+            CheapestProduct();
         }
     }
 }
